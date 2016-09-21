@@ -24,7 +24,7 @@ def send_message_to_mihai():
     login_button = browser.find_element_by_id("u_0_10")
     login_button.submit()
 
-    browser.get("https://www.facebook.com/messages/sandu.mihai")
+    browser.get("https://www.facebook.com/messages/*first_name*.*last_name*")
 
     textarea  = browser.find_element_by_css_selector("textarea[class*='uiTextareaAutogrow _1rv']")
     textarea.send_keys(random.choice(messages))
